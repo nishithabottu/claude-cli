@@ -1,0 +1,10 @@
+2026-05-09T14:32:11Z [ERROR] auth-api: failed to issue token: jwt.ExpiredSignatureError at line 142 of token_service.py
+2026-05-09T14:33:02Z [CRITICAL] payments-worker: dropped 47 messages from kafka topic 'orders.created' due to consumer lag > 30s
+2026-05-09T14:33:55Z [ERROR] redis: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist on disk
+2026-05-09T14:34:10Z [WARNING] nginx: upstream server temporarily disabled while connecting to upstream, client: 10.0.4.22, request: "GET /api/v2/users/me"
+2026-05-09T14:34:48Z [ERROR] postgres: deadlock detected, process 18432 waits for ShareLock on transaction 990321; canceled by user request
+2026-05-09T14:35:21Z [CRITICAL] checkout-svc: OutOfMemoryError: Java heap space at com.shop.cart.CartReducer.merge(CartReducer.java:88)
+2026-05-09T14:36:04Z [ERROR] s3-uploader: SlowDown 503 from s3.us-west-2.amazonaws.com; retried 5 times, giving up after 12.4s
+2026-05-09T14:36:39Z [WARNING] feature-flags: GrowthBook poll returned 304 Not Modified for the 6th consecutive interval; cache may be stale
+2026-05-09T14:37:12Z [ERROR] ml-inference: CUDA out of memory. Tried to allocate 384.00 MiB on device 0 (already allocated 14.7 GiB / 15.0 GiB)
+2026-05-09T14:38:00Z [INFO] auth-api: rate limit reset for client 8f3c.. (was throttled 4 times in last 60s)

@@ -1,0 +1,22 @@
+[project]
+name = "claude-cli"
+version = "0.1.0"
+description = "A pip-installable Python CLI that pipes stdin into Claude with structured outputs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Nishi" }]
+dependencies = [
+    "anthropic>=0.40.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+claude-cli = "claude_cli.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.11.2,<0.12.0"]
+build-backend = "uv_build"
