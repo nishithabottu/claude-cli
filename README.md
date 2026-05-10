@@ -17,9 +17,15 @@ output discipline, so this one bakes Pydantic validation in at the boundary.
 ## Install
 
 ```bash
-git clone https://github.com/<you>/claude-cli && cd claude-cli
-pip install -e .
+pip install claude-pipe
 export ANTHROPIC_API_KEY=sk-ant-...
+```
+
+Or, from source:
+
+```bash
+git clone https://github.com/nishithabottu/claude-cli && cd claude-cli
+pip install -e .
 ```
 
 ## Worked example
